@@ -1,0 +1,10 @@
+.listItem {
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+  display: flex;
+  padding: 10px;
+}
+
+.actionButton {
+  background-color: yellow;
+}
