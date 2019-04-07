@@ -1,10 +1,37 @@
-.listItem {
-  margin-bottom: 20px;
-  border-bottom: 1px solid black;
-  display: flex;
-  padding: 10px;
+li {
+  border-bottom: 1px solid  #e0e0eb;
 }
 
-.actionButton {
-  background-color: yellow;
+li:last-of-type {
+  border-bottom: 4px solid #9dc6b3;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+}
+
+.open {
+  padding: 12px;
+  transform: translate(-85px, 0px);
+  width: 100% + 85px;
+}
+
+.notOpen {
+  padding: 12px;
+}
+
+.moreButtonContainer {
+  border-left: 1.5px solid #83af9a;
+  cursor: pointer;
+  width: 60px;
+  margin-left: auto;
+}
+
+.displayContainer {
+  cursor: pointer;
+  line-height: 28px;
+  background-color: #e1f4eb;
+  width: 100px;
+  margin-left: auto;
 }

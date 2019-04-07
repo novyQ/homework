@@ -1,0 +1,12 @@
+.userDetails {
+  color: white;
+  padding: 10px;
+  height: 300px;
+  width: 320px;
+  background-color: rgba(157,198,179, 0.9);
+}
+
+p:first-of-type {
+  font-weight: 700;
+  font-size: 17px;
+}

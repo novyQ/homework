@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
+import './UserDetails.css'
 
-class UserDetail extends Component {
-
-  render() {
-    const { itemData } = this.props;
-    const { id, name, phone, website } = itemData
-
-    return (
-      <div>
-        <div>{itemData.name}</div>
-      </div>
-    )
-  }
+const UserDetails = ({ display }) => {
+  return (
+    <div className="userDetails">
+      <p>{display.name}</p>
+      <p>Phone: {display.phone}</p>
+      <p>Email: {display.email}</p>
+      <p>Company: {display.company.name}</p>
+      <p>Note: {display.company.catchPhrase}</p>
+    </div>
+  )
 }
 
-export default UserDetail
+export default UserDetails
