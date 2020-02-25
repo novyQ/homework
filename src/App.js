@@ -13,7 +13,8 @@ const App = () => {
     Normally I would split it into smaller components;
     - Add remove filter in select;
     - Add color for each specific legends;
-    - Add year in center of pie chart, using position relative
+    - Add year in center of pie chart, using position relative;
+    - Fix nivo proptype warnings;
   */
   const [scope, setScope] = useState("");
   const [method, setMethod] = useState("");
@@ -157,9 +158,10 @@ const App = () => {
       </div>
       <div className="Year">Scope Data of 2017 - 2019</div>
       <div className="PieContainer">
-        {pieData.map(pie => {
+        {pieData.map((pie, index) => {
           return (
             <ResponsivePie
+              key={index}
               data={pie.sortedData}
               margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
               innerRadius={0.5}
